@@ -41,7 +41,9 @@ const WeddingParty: React.FC = () => {
                     <div>
                       <h3 className="font-semibold text-lg text-gray-800">Düğün Mekanı</h3>
                       <p className="text-gray-600 mb-2">Bergule Kır Bahçesi</p>
-                      <p className="text-sm text-gray-500">Yenibedir Köyü No:132, Lüleburgaz / Kırklareli</p>
+                      <p className="text-sm text-gray-500">
+                        Yenibedir Köyü No:132, Lüleburgaz / Kırklareli
+                      </p>
                     </div>
                   </div>
 
@@ -71,13 +73,14 @@ const WeddingParty: React.FC = () => {
                 <div className="space-y-6">
                   <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2943.123!2d27.123!3d41.456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDI3JzIxLjYiTiAyN8KwMDcnMjMuNCJF!5e0!3m2!1str!2str!4v1699999999999!5m2!1str!2str"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.6992357579865!2d27.4187337!3d41.3585434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b4bc6fb043373d%3A0x40c38221b644aaba!2sBergule%20K%C4%B1r%20Bah%C3%A7esi%20%26%20Restoran%20%26%20K%C4%B1r%20D%C3%BC%C4%9F%C3%BCn%20Bah%C3%A7esi!5e0!3m2!1str!2str!4v1721721111111!5m2!1str!2str"
                         width="100%"
                         height="100%"
                         style={{ border: 0 }}
                         allowFullScreen
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
+                        title="Bergule Kır Bahçesi Harita"
                     ></iframe>
                   </div>
 
@@ -95,30 +98,49 @@ const WeddingParty: React.FC = () => {
             {/* GELİN EVİ */}
             <div>
               <div className="text-center mb-12">
-                <h2 className="font-serif text-3xl md:text-4xl text-pink-600 mb-2">Gelin Evi (Alay Başlangıcı)</h2>
+                <h2 className="font-serif text-3xl md:text-4xl text-pink-600 mb-2">
+                  Gelin Evi (Alay Başlangıcı)
+                </h2>
                 <div className="w-20 h-1 bg-gradient-to-r from-pink-400 to-purple-400 mx-auto" />
               </div>
 
               <div className="grid md:grid-cols-2 gap-10 items-start">
-                <div className="flex items-start space-x-4 p-6 bg-white/90 rounded-lg shadow-md">
-                  <MapPin className="w-8 h-8 text-pink-500 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold text-lg text-gray-800">Adres</h3>
-                    <p className="text-gray-600">İnönü Mahallesi, Arka Sokak</p>
-                    <p className="text-gray-600">Umay Apartmanı No:4 Daire:1</p>
-                    <p className="text-sm text-gray-500">Lüleburgaz / Kırklareli</p>
+                <div className="flex flex-col space-y-4 p-6 bg-white/90 rounded-lg shadow-md">
+                  <div className="flex items-start space-x-4">
+                    <MapPin className="w-8 h-8 text-pink-500 flex-shrink-0" />
+                    <div>
+                      <h3 className="font-semibold text-lg text-gray-800">Adres</h3>
+                      <p className="text-gray-600">İnönü Mahallesi, Arka Sokak</p>
+                      <p className="text-gray-600">Umay Apartmanı No:4 Daire:1</p>
+                      <p className="text-sm text-gray-500">Lüleburgaz / Kırklareli</p>
+                    </div>
                   </div>
+
+                  <a
+                      href="https://www.google.com/maps/dir/?api=1&destination=41.3949627,27.3458056"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-pink-600 underline font-semibold"
+                  >
+                    Yol Tarifi Al
+                  </a>
                 </div>
 
-                <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
+                <div className="aspect-video rounded-lg overflow-hidden shadow-lg cursor-pointer"
+                     onClick={() => window.open(
+                         "https://www.google.com/maps/dir/?api=1&destination=41.3949627,27.3458056",
+                         "_blank"
+                     )}
+                >
                   <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3012.740053250644!2d27.362767!3d41.399733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDIzJzU5LjAiTiAyN8KwMjEnNDYuMCJF!5e0!3m2!1str!2str!4v1721385600000!5m2!1str!2str"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3014.352393959495!2d27.345805615579898!3d41.39496267926456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b4bbf6e2f9f52f%3A0x2a4c0b9b6d4b41a4!2s%C4%B0n%C3%B6n%C3%BC%20Mahallesi%2C%20Arka%20Sokak%204%2C%2043910%20L%C3%BCleburgaz%2FK%C4%B1rklareli!5e0!3m2!1str!2str!4v1721729999999!5m2!1str!2str"
                       width="100%"
                       height="100%"
                       style={{ border: 0 }}
                       allowFullScreen
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
+                      title="Gelin Evi Haritası"
                   ></iframe>
                 </div>
               </div>
