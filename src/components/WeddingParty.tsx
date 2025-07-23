@@ -133,15 +133,16 @@ const WeddingParty: React.FC = () => {
                      )}
                 >
                   <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3014.352393959495!2d27.345805615579898!3d41.39496267926456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b4bbf6e2f9f52f%3A0x2a4c0b9b6d4b41a4!2s%C4%B0n%C3%B6n%C3%BC%20Mahallesi%2C%20Arka%20Sokak%204%2C%2043910%20L%C3%BCleburgaz%2FK%C4%B1rklareli!5e0!3m2!1str!2str!4v1721729999999!5m2!1str!2str"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d304.7554486823346!2d27.36114991520304!3d41.40035114722501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b4bb4ca135d331%3A0xde66cf9dc6a73b1d!2s%C4%B0n%C3%B6n%C3%BC%2C%20Arka%20Sk.%20No%3A4%2C%2039750%20L%C3%BCleburgaz%2FK%C4%B1rklareli!5e0!3m2!1str!2str!4v1721737650000!5m2!1str!2str"
                       width="100%"
                       height="100%"
-                      style={{ border: 0 }}
+                      style={{border: 0}}
                       allowFullScreen
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
-                      title="Gelin Evi Haritası"
-                  ></iframe>
+                      title="İnönü Mahallesi Arka Sokak Haritası"
+                  />
+
                 </div>
               </div>
             </div>
